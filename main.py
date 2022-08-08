@@ -12,10 +12,8 @@ def get_available_time_for_today():
     DB_PATH = str(Path.home()) + "\\stopme.json"
     q = Query()
 
-    print(DB_PATH)
     db = TinyDB(DB_PATH)
     r = db.search(q.date == record_date)
-    print(r)
     if not r:
         db.insert({'date': record_date})
         return 20
