@@ -20,7 +20,6 @@ def get_available_time_for_today():
         return 20
     else:
         return 0
-    pass
 
 
 def logoff():
@@ -30,8 +29,6 @@ def logoff():
 
 def main_program():
     temps = get_available_time_for_today()
-    print(temps)
-    pass
 
 
 if __name__ == '__main__':
