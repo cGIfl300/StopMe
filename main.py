@@ -2,6 +2,7 @@ import subprocess
 import datetime
 from pathlib import Path
 from tinydb import TinyDB, Query
+import time
 
 
 def get_available_time_for_today():
@@ -28,7 +29,10 @@ def logoff():
 
 
 def main_program():
-    temps = get_available_time_for_today()
+    time_left = get_available_time_for_today()
+    break_duration = time_left * 60
+    time.sleep(break_duration)
+    logoff()
 
 
 if __name__ == '__main__':
