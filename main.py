@@ -3,6 +3,7 @@ import datetime
 from pathlib import Path
 from tinydb import TinyDB, Query
 
+
 def get_available_time_for_today():
     # Get the available time left for today, return 0 if none
     current_time = datetime.datetime.now()
