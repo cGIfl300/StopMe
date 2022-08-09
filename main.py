@@ -29,7 +29,6 @@ def logoff():
 def main_program():
     time_left = get_available_time_for_today()
     break_duration = time_left * 60
-    print(break_duration)
     time.sleep(break_duration)
     logoff()
 
